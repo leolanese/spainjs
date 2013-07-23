@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Responsive Web Design: The good parts</title>
+    <meta name="description" content="">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1" name="viewport">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="apple-touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-iphone4.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-ipad3.png" />
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+    <link rel="stylesheet" href="css/rwd.css">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+        document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+       <div class="reveal">
+
+            <div class="slides">
+
+                <!-- 0 -->
+                <section class='gratitude' data-background="#4D4D4D">
+                    <h1>Welcome!</h1>
+                    <h3>What are we going to talk about?</h3>
+                    <br>
+                    <ul>
+                        <li>
+                            Since 2010, we've entered into a new phase in web design and development.
+                            The Responsive idea was conceived to solve a problem.<br>
+                            Technology always evolves, trends always change. Now websites grow in their ambition and complexity,
+                            we are not longer building pages, we are building dynamic and interactive Responsive web applications.
+                        </li>
+                    </ul>
+                    <br><br>
+                    <ul>
+                        <li>
+                            We are going to share advanced and emerging techniques for improving Responsive applications.
+                            Focusing on "The Good Parts", avoiding the classic pitfalls, with the emphasis on latest trends and revealing what RWD really can do for you.
+                        </li>
+                    </ul>
+                </section>
+
+
+                <!-- 1 -->
+                <section>
+                    <!-- TV animation thanks to: http://ademilter.com -->
+                    <span class='logo'></span>
+                    <span class='wego'><a href='http://twitter.com/leolaneseltd' target="_blank">@leolaneseltd</a></span>
+                    <canvas id="bw"></canvas>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+                <!-- 2 -->
+                <section>
+                    <article class="darwin"></article>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+
+                <!-- 3 -->
+                <section>
+                    <h1>Responsive Web Design:</h1>
+
+                    <div id="devices">
+                        <div class="device" id="iphone">
+                            <div class="speaker"></div>
+                            <div class="screen frase">The</div>
+                            <div class="mic"></div>
+                        </div>
+                        <div class="device" id="ipad">
+                            <div class="camera good"></div>
+                            <div class="screen frase">Good</div>
+                            <div class="button"></div>
+                        </div>
+                        <div id="desktop">
+                            <div class="device monitor">
+                                <div class="screen frase">Parts</div>
+                            </div>
+                            <div class="stand">
+                                <div class="left-side"></div>
+                                <div class="right-side"></div>
+                            </div>
+                            <div class="base">
+                                <div class="bottom"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- 4  -->
+                <section>
+                    <section>
+                        <h2>Simply put: Responsive Web Design is:</h2>
+                        <ul>
+                            <li>Flexible, grid-based layout</li>
+                            <li>Flexible media: <a href="http://jsfiddle.net/leolanese/U5JWJ/" target="_blank">images;</a> and
+                                <a href="http://jsfiddle.net/leolanese/nUdyU/" target="_blank"> video;</a></li>
+                            <li>@media queries</li>
+                        </ul>
+                    </section>
+
+
+                    <section>
+                        <h2>RWD is just the beginning.</h2><br>
+                        <h3>"The Good Parts" are on top of it:</h3>
+                        <ul>
+                            <li>Mobile First</li>
+                            <li>Progressive Enhancement</li>
+                            <li>Automatic Tests</li>
+                        </ul>
+                        <article class=quote>
+                            "Responsive Web Design is one of the most important technologies to appear in recent years.
+                            But using RWD badly may be worse than not offering it at all", Craig Buckler
+                        </article>
+
+                        <aside class="notes">
+                        </aside>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <h2>a better RWD definition</h2><br>
+                        <p>Responsive Web Design is the practice of creating reliable <b>future friendly</b> websites; that <b>fluidly respond</b>
+                            to deliver the <b>right user experience</b> for the <b>right environment</b> at the <b>right time</b>.
+                        </p>
+                    </section>
+                </section>
+
+
+                <section>
+                    <h3 class="positioning  top">Case <b>study</b>: RWD images</h3>
+                    <ul>
+                        <li><a href="http://jsfiddle.net/leolanese/aPaYt/" target='_blank'>"BBC";</a></li>
+                        <li><a href="http://leolanese.com/widthdetector/index.html" target="_blank">widthDetector.js;</a></li>
+                        <li><a href="http://scottjehl.github.io/picturefill/" target="_blank">"FilamentGroup": Picturefill.js; </a></li>
+                        <ul>
+                            <li>+ No server-side components. </li>
+                            <li>- Not valid syntax.</li>
+                            <li><a href="http://caniuse.com/css-mediaqueries" target="_blank">- media queries</a></li>
+                            <li><a href="http://caniuse.com/matchmedia" target="_blank">- matchmedia</a></li>
+                            <li><a href="http://mobilehtml5.org/" target="_blank">- HTML5 Custom Data Attributes (data-*)</a></li>
+                            <li>- Not bandwidth test</li>
+                        </ul>
+                        <li><a href="http://www.cdnconnect.com/docs/foresightjs/demos/basic-comparison" target="_blank">"Washington Post Mobile" Foresight.js hi-res/responsive img</a></li>
+                        <ul>
+                            <li><a href="http://www.quirksmode.org/blog/archives/2012/06/devicepixelrati.html" target="_blank">+ devicePixelRatio</a></li>
+                            <li><a href="https://github.com/adamdbradley/foresight.js/" target="_blank">+ Bandwidth test</a></li>
+                        </ul>
+                        <li><a href="http://www.codinghorror.com/blog/2005/12/progressive-image-rendering.html" target="_blank">The old Progressive image loading;</a></li>
+                        <li><a href="http://blog.chromium.org/2013/02/using-webp-to-improve-speed.html" target='_blank'>.WebP image format.</a></li>
+                        <ul>
+                            <li><a href="https://developers.google.com/speed/webp/gallery" target='_blank'>Demo;</a></li>
+                            <li><a href="http://caniuse.com/webp" target="_blank">Can I use it?;</a></li>
+                            <li><a href="http://html5please.com/#webp" target="_blank">Community recommendation;</a></li>
+                        </ul>
+                    </ul>
+                    </p>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h3 class="positioning  top">Case <b>study</b>: RWD video</h3>
+                    <ul>
+                        <li>
+                            <a href="http://jsfiddle.net/leolanese/8Fygj/" target="_blank">Video (HTML5 video)</a>
+                            <ul>
+                                <li>
+                                    - external embed videos needs to use &#60;iframe&#62; instead &#60;video&#62;
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://jsfiddle.net/leolanese/bT9nx/" target="_blank">Video (iframe + intrinsic ratio)</a>
+                            <ul>
+                                <li>
+                                    - can't dynamically load external videos because you don't know how the aspect-ratio would be
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://jsfiddle.net/leolanese/am9gA/" target="_blank">Video (iframe + FitVids.js)</a>
+                            <ul>
+                                <li>
+                                    - embed videos using &#60;iframe&#62; instead &#60;video&#62;
+                                </li>
+                                <li>
+                                    + create a wrapper around the iframe to preserve the aspect ratio.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <article class='quote fix'>"Plan for the fact that whatever you implement will be deprecated", @grigs</article>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h3 class="positioning  top">Case <b>study</b>: Performance</h3>
+                    <ul>
+                        <li>Mobile First development and Mobile First Design
+                            <ul>
+                                <li>Treat Performance As Design</li>
+                                <li>Focus only the most important data</li>
+                            </ul>
+                        </li>
+
+                        <li>Progressive Enhancement:
+                            <ul>
+                            <li>JS as a feature:
+                                <a href="http://jsfiddle.net/leolanese/3uPZy/" target='_blank'> js no-js;</a>
+                                or <a href="http://jsfiddle.net/leolanese/qxLJY/" target='_blank'> hasClass;</a>
+                                or <a href="http://jsfiddle.net/leolanese/Qmexu/" target='_blank'> clientInformation;</a>
+                            </li>
+
+                            <li>Feature detection:
+                                <a href="http://www.browserleaks.com/modernizr" target='_blank'> Modernizr</a>
+                                and <a href="https://github.com/phiggins42/has.js/" target='_blank'> has.js</a>
+                            </li>
+                            <ul>
+                                <li>Targeting DOM Objects
+                                    <a href="http://jsfiddle.net/leolanese/xDKAt/" target='_blank'> navigator.connection.type;</a>
+                                    <a href="http://jsfiddle.net/leolanese/Qmexu/" target='_blank'> clientInformation;</a>
+                                    <a href="./img/clientInformation_IE10.png" target='_blank'> IE10;</a>
+                                    <a href="./img/clientInformation_Chrome27.png" target='_blank'> Chrome27;</a>
+                                    <a href=" http://help.dottoro.com/ljwupxoh.php" target='_blank'> full list.</a>
+                                </li>
+
+                                <li>Targeting JavaScript API
+                                    <a href="http://jsfiddle.net/leolanese/bqGqr/" target='_blank'> matchMedia;</a> or enquire.js
+                                    <a href="http://kangax.github.io/es5-compat-table/" target='_blank'> ECMAScript5/6;</a>
+                                    <a href="http://jsfiddle.net/leolanese/VAhxF/" target='_blank'> 'use strict';</a>
+                                    <a href="http://jsfiddle.net/leolanese/95CGp/" target='_blank'> JSON parsing; (Thanks Douglas Crockford !)</a>
+                                </li>
+
+                                <li>Targeting CSS
+                                    <a href="http://jsfiddle.net/leolanese/SV76U/" target='_blank'> CSS @support;</a>
+                                    <a href='http://jsfiddle.net/leolanese/g3j2E/' target="_blank">Modernizr + @support;</a>
+                                </li>
+                            </ul>
+                            <li>Conditional loading:
+                                <a href="http://jsfiddle.net/leolanese/QGdqM/" target='_blank'> Yepnope;</a>
+                                <a href="http://www.leolanese.com/portfolio/files/mediaQueries18/carton.html" target="_blank">@media queries image as conditional;</a>
+                            </li>
+                            <li><a href='http://jsfiddle.net/leolanese/N554G/' target='_blank'>Dynamic function loading (Lazy Loading)</a></li>
+                        </ul>
+
+                    </ul>
+                    <span class='quote fix' data-markdown>"As web creators we need to see performance as design", @elementByIdea</span>
+                    <aside class="notes">
+
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h3 class="positioning  top">Case <b>study</b>: Testing Tools</h3>
+                    <ul>
+                        <li>Browser based Testing Tools</li>
+                        <ul>
+                            <li><a href="https://quirktools.com/screenfly/#u=http%3A//dp.la/&w=320&h=568&a=37&s=1" target='_blank'>quirktools</a></li>
+                            <li><a href="http://www.responsinator.com/?url=stuffandnonsense.co.uk/" target='_blank'>responsinator</a></li>
+                            <li><a href="http://www.browserstack.com/responsive" target='_blank'>Browserstack RWD</a></li>
+                        </ul>
+                        <li>Brand Simulators: iOS, Android, Blackberry, etc.</li>
+                        <li>Testing performance</li>
+                        <ul>
+                            <li><a href="http://www.webpagetest.org/" target='_blank'>webpagetest</a></li>
+                            <li><a href="http://mobitest.akamai.com/" target='_blank'>mobitest</a></li>
+                        </ul>
+                        <li>
+                            Remote debugging:
+                            <a href='https://developers.google.com/chrome-developer-tools/docs/remote-debugging' target="_blank">Android.</a>
+                            <a href='https://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/DebuggingSafarioniPhoneContent/DebuggingSafarioniPhoneContent.html' target="_blank">iOS.</a>
+                        </li>
+                        <li>Real devices testing</li>
+                        <li><a href="http://www.browserstack.com/automated-browser-testing-api" target='_blank'>Automated Test:</a>
+                            <ul>
+                                <li>
+                                    <a href="http://leolanese.com/blog/2012/08/21/fibonacci/" target='_blank'>Leo Fibonacci.</a>
+                                    <a href="http://jsfiddle.net/leolanese/HQsME/" target='_blank'>Native Jasmine matchers;</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="quote go">"Mobile devices require software development teams to focus on only the most important data and actions in an application.", Luke Wroblewski</div>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h3 class="positioning top">Case <b>study</b>: Measure units and pixel perfect on Responsive</h3>
+                    <ul>
+                        <li><a href="http://html.adobe.com/edge/reflow/" target='_blank'>Pixel-perfect tools for RWD;</a> </li>
+                        <li><a href="http://leolanese.com/blog/2013/06/04/proportional-perfect/">Pixel-perfect Vs. Proportion-perfect</a></li>
+                        <li>Relative length units:
+                            <a href='http://jsfiddle.net/leolanese/cxxt2/' target="_blank"> vw, vh, px, pt, %, em, rem and fluidflex.js;</a>
+                        </li>
+                        <li><a href='http://jsfiddle.net/leolanese/aeya3/' target="_blank">Fluid font without js;</a></li>
+                    </ul>
+                    <span class='quote fix'>"The Post-PSD Era", @brad_frost</span>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h3 class="positioning top">Case <b>study</b>: CSS3 hot topics</h3>
+                    <ul>
+                        <li><a href="http://jsfiddle.net/leolanese/YHnXP/" target="_blank">flexbox;</a></li>
+                        <ul>
+                            <li><a href="http://caniuse.com/#feat=flexbox" target='_blank'>Can I use it?</a></li>
+                            <li><a href='http://html5please.com/#flexbox' target="_blank">Community recommendation?</a></li>
+                            <li><a href="http://css-tricks.com/old-flexbox-and-new-flexbox/" target="_blank">Different versions</a></li>
+                            <ul>
+                                <li>
+                                    <a href="http://codepen.io/chriscoyier/pen/DLikE" target="_blank">"Old" Flexbox;</a>
+                                    and
+                                    <a href="http://jsfiddle.net/leolanese/QfgL3/" target="_blank" >"New" Flexbox;</a>
+                                </li>
+                                <ul>
+                                    <li>v.2009: display: -prefix-box; or property box-{*}</li>
+                                    <li>v.2011: display: flexbox; or flex() function</li>
+                                    <li>v.2012: display: flex; and flex-{*} properties</li>
+                                </ul>
+                            </ul>
+                            <li><a href="http://bennettfeely.com/flexplorer/">flexbox playground</a></li>
+                        </ul>
+                        <li>
+                            <a href="http://jsfiddle.net/leolanese/ZbQ37/" target="_blank">box-sizing;</a>
+                            <ul>
+                                <li><a href="http://caniuse.com/css3-boxsizing" target='_blank'>Can I use it?</a></li>
+                                <li><a href='http://html5please.com/#box-sizing' target="_blank">Community recommendation?</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="http://jsfiddle.net/leolanese/dTeh2/" target="_blank">:not;</a>
+                        </li>
+                    </ul>
+
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h3 class="positioning top">Case <b>study</b>: HTML5 hot topics</h3>
+                    <ul>
+                        <li>SVG</li>
+                        <ul>
+                            <li><a href='http://caniuse.com/svg' target="_blank">Can I use it?</a></li>
+                            <li><a href='http://html5please.com/#svg' target="_blank">Community recommendation?</a></li>
+                        </ul>
+                        <li><a href="http://jsfiddle.net/leolanese/7ckQZ/" target="_blank">SVG Resolution Independence;</a>
+                        <li><a href="http://jsfiddle.net/leolanese/5VbLf/" target="_blank">SVG as background;</a></li>
+                        <li><a href="http://jsfiddle.net/leolanese/L3BRf/" target="_blank">SVG using PNG as fallback;</a></li>
+                        <li><a href="http://www.broken-links.com/tests/svg/" target="_blank">SVGZ the compressed SVG format</a>
+                            (one-third of the non-compressed version, @stopsatgreen)</li>
+                        <li>
+                            <a href="http://jsfiddle.net/leolanese/jpbNv/" target="_blank">SVG Data URIs</a>
+                            <a href='http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/' target="_blank">Conversion tool</a>
+                        </li>
+                        <li>SVG optimizer
+                            <a href="http://petercollingridge.appspot.com/svg_optimiser" target='_blank'>{1}</a>
+                            <a href="https://github.com/svg/svgo" target='_blank'>{2}</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/filamentgroup/grunticon" target='_blank'>icons and background for ALL devices: Grunticon </a>
+                        </li>
+                        <li><a href="http://people.opera.com/andreasb/demos/demos_svgopen2009/circle.svg" target="_blank">Embed media queries inside SVG images, @andreasbovens</a></li>
+                    </ul>
+                    <span class='quote fix'>"SVG is not meant to be used for pixel manipulation", net.tutsplus.com</span>
+                    <aside class="notes">
+                    </aside>
+                </section>
+
+
+                <section>
+                    <h3 class="positioning  top">Case <b>study</b>: HTML5 hot topics</h3>
+                    <ul>
+                        <li><a href="http://quirksmode.org/html5/tests/inputs.html" target="_blank">rely on native support (h5f)</a></li>
+                        <li><a href="http://blog.paciellogroup.com/2013/02/using-wai-aria-landmarks-2013/" target="_blank">
+                            WAI-ARIA Landmarks </a> (Web Accessibility Initiative Accessible Rich Internet Applications)</li>
+                            <ul>
+                               <li><a href='http://html5accessibility.com/' target="_blank"> Can I use it?</a></li>
+                            </ul>
+                        <li>HTML5 Application Cache
+                        <ul>
+                            <li><a href="http://caniuse.com/offline-apps" target="_blank">Can I use it?</a></li>
+                            <li><a href='http://html5please.com/#offline' target="_blank">Community recommendation?</a></li>
+                        </ul>
+                        <li><a href="http://jsfiddle.net/leolanese/uDZDG/" target="_blank">HTML5 voice recognition.</a>
+                    </ul>
+                    <span class='quote fix'>"Mobile is a user state, not a device", @Cennydd</span>
+                </section>
+
+
+                <section>
+                    <h3 class="positioning top">Case <b>study</b>: Using icon webfonts instead of images</h3>
+                    <ul>
+                        <li>RWD Fonts</li>
+                        <ul>
+                            <li><a href='http://jsfiddle.net/leolanese/JfGVE/' target="_blank">font awesome</a></li>
+                            <li><a href='http://www.entypo.com/characters/' target="_blank">entypo</a></li>
+                            <li><a href='http://icomoon.io/app/' target="_blank">icomoon.io</a></li>
+                            <li><a href='http://brajeshwar.github.io/entities/' target="_blank">HTML entities</a></li>
+                            <li><a href='http://jsfiddle.net/leolanese/9yXGu/' target="_blank">Hand made: 'Icon Set'</a></li>
+                        </ul>
+                    </ul>
+                    <span class='quote fix'>Diversity is not a bug, it's an opportunity', @stephanierieger</span>
+                </section>
+
+
+                <section>
+                    <p>One more thing...</p>
+                </section>
+
+
+                <section data-transition="linear" data-background-transition="slide">
+                    <h2>RWD is not effortless, but it's worth it.</h2>
+                        <p class='go'>It's requires a lot of effort to create a <a href='http://alistapart.com/article/for-a-future-friendly-web' target="_blank">Future-friendly Web.</a></p>
+                    Being a Responsive Developer is like surfing in an ocean of technologies and living in a culture of innovation,
+                    feeling like we are not just developers;
+                        <div class='go'><i> "We are artists of the code"</i></div>
+                    </p>
+                </section>
+
+
+                <section class='gratitude' data-background="#4D4D4D">
+                    <h1>Gratitude!</h1>
+                    <h3 class=go>Questions?</h3>
+                    <ul>
+                        <li class="go">Further questions:</li>
+                        <ul>
+                            <li><a href="http://twitter.com/leolaneseltd" target='_blank'>@leolaneseltd</a></li>
+                            <li><a href="http://www.leolanese.com/spainjs/" target='_blank'>www.leolanese.com/spainjs/</a></li>
+                            <li><a href="http://www.leolanese.com/blog/" target='_blank'>www.leolanese.com/blog/</a></li>
+                        </ul>
+                        <li class="go">My other presentations:</li>
+                        <ul>
+                            <li><a href="http://leolanese.com/scotlandjs/#1" target='_blank'>ScotlandJS Conference (Edinburgh)</a></li>
+                            <li><a href="http://leolanese.com/jsconf/#1" target='_blank'>JSconf Conference (Buenos Aires)</a></li>
+                        </ul>
+                    </ul>
+
+                </section>
+
+            </div>
+        </div>
+
+        <!--
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        -->
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Optional libraries used to extend on reveal.js: notes.js(s),
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                //    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                //    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                //    { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+                //    { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
