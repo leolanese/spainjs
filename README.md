@@ -6,8 +6,14 @@
 
 by: <a href="http://twitter.com/LeoLaneseltd" target="_blank">Leo Lanese</a><br>
 
-News Article:
+### Conference:
+https://www.leolanse.com/scotlandjs
+<a href="https://leolanese.com/spainjs/#/" target="_blank">https://leolanese.com/spainjs/#/</a>
+
+### Article reported in the Spanish News:
 https://www.adictosaltrabajo.com/tutoriales/spainjs-2-0-charlas-con-java-script/
+
+
 
 --
 
