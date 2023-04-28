@@ -13,27 +13,13 @@ by: <a href="http://twitter.com/LeoLaneseltd" target="_blank">Leo Lanese</a><br>
 https://www.adictosaltrabajo.com/tutoriales/spainjs-2-0-charlas-con-java-script/
 
 
+---
+### :100: <i>Thanks!</i>
+#### Now, don't be an stranger. Let's stay in touch!
 
---
-
-#### { 'Leo Lanese',
-####   'Building Inspiring Responsive Reactive Solutions',
-####   'London, UK' }
-
-##### Portfolio<br>
-<a href="http://www.leolanese.com" target="_blank">http://www.leolanese.com</a>
-
-##### Twitter:<br>
-<a href="http://twitter.com/LeoLaneseltd" target="_blank">twitter.com/LeoLaneseltd</a>
-
-##### Questions / Suggestion / Recommendation ?<br>
-<a href="mail:to">developer@leolanese.com</a>
-
-#### GitHub bash profile:<br>
-<a href="http://github.com/leolanese/bash_profile" target="_blank">github.com/leolanese/bash_profile</a>
-
-##### DEV.to:<br>
-<a href="http://www.dev.to/leolanese" target="_blank">www.dev.to/leolanese</a>
-
-##### Blog:<br/>
-<a href="http://www.leolanese.com/blog" target="_blank">leolanese.com/blog</a>
+##### :radio_button: linkedin: <a href="https://www.linkedin.com/in/leolanese/" target="_blank">@LeoLanese</a>
+##### :radio_button: Twitter: <a href="https://twitter.com/LeoLanese" target="_blank">@LeoLanese</a>
+##### :radio_button: Portfolio: <a href="https://www.leolanese.com" target="_blank">www.leolanese.com</a>
+##### :radio_button: DEV.to: <a href="https://www.dev.to/leolanese" target="_blank">dev.to/leolanese</a>
+##### :radio_button: Blog: <a href="https://www.leolanese.com/blog" target="_blank">leolanese.com/blog</a>
+##### :radio_button: Questions / Suggestion / Recommendation: developer@leolanese.com
